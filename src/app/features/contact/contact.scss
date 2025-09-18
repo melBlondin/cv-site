@@ -1,0 +1,51 @@
+.container{
+    width: 100vw;
+    font-family: "Poiret One", sans-serif;
+    color: black;
+
+        .wrapper{
+            background-color: white;
+            margin: auto;
+            height: auto;
+            padding: 2em;
+            font-size: 1.2em;
+
+            h2{
+                padding-bottom: 1em;
+                padding-top: 2em;
+            }
+            p{
+                font-size: 1.2em;
+                padding-bottom: 1em;
+            }
+            .flex{
+                display: flex;
+                justify-content: center;
+            table{
+                width: 350px;
+                font-size: 1.2em;
+                line-height: 1.3em;
+            }
+        }
+        .adress{
+            text-align: center;
+            padding-top: 2em;
+
+            p{
+                padding-bottom: 0.2em;
+                font-weight: bold;
+            }
+
+            #tel{
+                text-decoration: underline;
+            &:hover{
+                color: #B8860B;
+            }
+            }
+        }
+
+        iframe{
+            padding-top: 2em;
+        }
+        }
+    }

@@ -1,0 +1,159 @@
+.container {
+  width: 100vw;
+  font-family: 'Poiret One', sans-serif;
+  color: black;
+
+  .wrapper {
+    background-color: white;
+    margin: auto;
+    height: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .flex-home-bckgrd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3em;
+
+    .home-msg {
+      text-align: left;
+    }
+    h2 {
+      padding-bottom: 0.5em;
+    }
+
+    p {
+      padding-bottom: 0.5em;
+    }
+  }
+  .home-pic {
+    padding-bottom: 1em;
+    img {
+      border-radius: 10px;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.models-pic {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 1px 5px 5px rgb(110, 109, 109);
+  padding: 0.4em;
+}
+
+.welcome-msg {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: #b8860b;
+
+  & :hover {
+    color: #b8860b;
+  }
+}
+
+.home-slides {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1em;
+
+  img {
+    width: 30%;
+    border: 1px solid white;
+  }
+}
+
+@media screen and (min-width: 756px) {
+  .container {
+    .wrapper {
+      width: 100%;
+      background-color: white;
+      text-align: center;
+
+      .flex-home-bckgrd {
+        flex-direction: row;
+        padding-top: 5em;
+        .home-msg {
+          width: 48%;
+          font-size: 1.2em;
+        }
+
+        .models-pic {
+          display: flex;
+          width: 50%;
+          height: 100%;
+          border-radius: 15px;
+          box-shadow: 1px 5px 5px rgb(110, 109, 109);
+        }
+      }
+      .home-pic {
+        width: 100%;
+        padding-top: 0.5em;
+
+        img {
+          width: 60%;
+        }
+      }
+      p {
+        font-size: 1.2em;
+      }
+      .welcome-msg {
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+.nav {
+  font-size: 2.5em;
+
+  .nav-labels {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    position: static;
+
+    li {
+      width: 100%;
+      text-align: center;
+      height: 2em;
+      border: none;
+    }
+  }
+}
+
+.sbh-logo {
+  height: 11em;
+  img {
+    width: 200px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .title {
+      font-size: 5em;
+      height: 4em;
+    }
+    .nav {
+      font-size: 2em;
+      .nav-labels {
+        width: 70%;
+      }
+    }
+    .sbh-logo {
+      height: 10em;
+      img {
+        width: 200px;
+      }
+    }
+  }
+}

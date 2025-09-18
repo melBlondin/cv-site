@@ -1,0 +1,119 @@
+.hidden{
+    display: none;
+    transition: display 40s cubic-bezier(.57,.29,.64,.86);
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    z-index: 997;
+    
+    img{
+        width: 400px;
+    }
+}
+
+.msg-container{
+    position: relative;
+    width: 100%;
+    height:100vh;
+}
+
+.msg-global{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    text-shadow:     
+    1px 1px 2px black,
+    0 0 1em white,
+    0 0 0.2em white;
+
+    .msg-en{
+        position: absolute;
+        z-index: 998;
+       right: 50%;
+        bottom: 28%;
+        opacity: 0;
+        animation-name: msg-en-animation;
+        animation-duration: 3s;
+        animation-timing-function: cubic-bezier(.57,.29,.64,.86);
+        animation-delay: 2s;
+    }
+
+    .msg-fr{
+        position: absolute;
+        z-index: 998;
+        left: 50%;
+        bottom: 32%;
+        opacity: 0;
+        animation-name: msg-fr-animation;
+        animation-timing-function: cubic-bezier(.57,.29,.64,.86);
+        animation-duration: 3s;
+        animation-delay: 4s;
+    }
+
+    .msg-es{
+        position: absolute;
+        z-index: 998;
+        left: 45%;
+        bottom: 30%;
+        opacity: 0;
+        animation-name: msg-es-animation;
+        animation-timing-function: cubic-bezier(.57,.29,.64,.86);
+        animation-duration: 3s;
+    }
+}
+
+@keyframes msg-en-animation {
+
+    0% {
+        scale: 100%;
+        opacity: 0;
+        
+    }
+    80%{
+        scale: 140%;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes msg-fr-animation {
+    0%{
+        opacity: 0;
+        scale: 100%;
+    }
+    80%{
+        opacity: 0.9;
+        scale: 140%;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+
+@keyframes msg-es-animation {
+    0%{
+        opacity: 0;
+        scale: 100%;
+    }
+    80%{
+        opacity: 0.9;
+        scale: 140%;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+

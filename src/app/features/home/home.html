@@ -1,0 +1,30 @@
+<div class="container" *transloco="let t">
+    <div class="wrapper">
+        <div class="flex-home-bckgrd">
+            <div class="home-msg"><h2>{{t('home-title')}}</h2>
+                <p><i>{{t('company-name')}}</i>{{t('home-description1')}}</p>
+                <p>{{t('home-description2')}}</p>
+                <p>{{t('home-description3')}}</p>
+            </div>
+            <div class="models-pic">
+                <img src="black-woman-blond-hair-min.jpg" alt="black-women-curly-blond-hair">
+                <img src="blonde-girl-short-hair-min.jpg" alt="clond-short-hair-woman">
+                <img src="man-with-braids-pic-min.jpg" alt="man-whith-braided-hair">
+            </div>
+        </div>
+        <div class="welcome-msg">
+            <p>{{t('price-message')}}<b>{{t('limit-date')}}</b></p>
+        </div>
+    <div class="home-pic">
+        <img id="mainImg" src={{path}} alt="main-picture-slider">
+    </div>
+    <!-- créer un component slide -->
+    <div class="home-slides">
+        <img id="img1" src="sbh-global-view.jpeg" alt="" (mouseover)="changeImg('sbh-global-view.jpeg')">
+        <img id="img2" src="sbh-front.jpeg" alt="" (mouseover)="changeImg('sbh-front.jpeg')">
+        <img id="img3"src="sbh-hairwashing-view.jpeg" alt="" (mouseover)="changeImg('sbh-hairwashing-view.jpeg')">
+        <img id="img4"src="sbh-seats-view.jpeg" alt="" (mouseover)="changeImg('sbh-seats-view.jpeg')">
+
+    </div>
+</div>
+</div>

@@ -1,0 +1,58 @@
+.container{
+    width: 100vw;
+    font-family: "Poiret One", sans-serif;
+    color: black;
+
+        .wrapper{
+            background-color: white;
+            margin: auto;
+            height: auto;
+            padding: 1em;
+            font-size: 1.2em;
+
+            h3{
+                font-size: 1.4em;
+            }
+
+
+        .flex{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2em;
+
+            table{
+                min-width: 350px;
+                line-height: 1.7em;
+
+
+                th,td:nth-child(2){
+                    text-align: center;
+                }
+                th,td{
+                    border-bottom: 1px solid rgb(223, 220, 220);
+                }
+                td:nth-child(2){
+                    border-left: 1px solid rgb(223, 220, 220);
+                }
+
+
+            }
+        }
+
+        }
+    }
+
+@media screen and (min-width: 756px) {
+
+    .container{
+        .wrapper{
+            .flex{
+                table{
+                    min-width: 650px;
+                    line-height: 1.9em;
+                    font-size: 1.1em;
+                }
+            }
+        }
+}
+}

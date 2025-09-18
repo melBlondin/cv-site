@@ -1,0 +1,14 @@
+<div class="flex">
+    
+        <div (click)="toggleLanguage()">
+            <img class="main-flag" src={{currentLang}} alt="">
+        </div>
+    <div class="language-menu" [class.hidden]="isRequestMenu">
+    @for (language of languages; track language.name){
+        @if(language.name!=currentLang){
+               <div (click)="selectLanguage(language.name)"><img class="flag" src="{{language.name}}" alt="{{language.name}}+ flag"></div> 
+        }
+    }
+    </div>
+    
+</div>

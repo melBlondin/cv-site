@@ -1,0 +1,102 @@
+.container{
+    width: 100vw;
+    font-family: "Poiret One", sans-serif;
+    color: black;
+
+        .wrapper{
+            background-color: white;
+            margin: auto;
+            height: auto;
+            padding: 2em;
+        
+        .flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+
+            .hair-view{
+                flex-direction: column;
+                img{
+                    border: 2px solid white;
+                }
+            }
+
+            h2{
+                text-decoration: underline;
+                text-decoration-color: #B8860B;
+            }
+
+            p{
+                padding-top: 0.5em;
+            }
+
+        }
+        .text{
+            padding-bottom: 0.5em;
+        }
+        .bloc{
+            padding-bottom: 1.5em;
+            
+            ul{
+                list-style-type: circle;
+                padding-left: 1em;
+                padding-top: 0.5em;
+
+
+                li{
+                    padding-left: 0.2em;
+                }
+            }
+            p,li{
+                font-size: 1.2em;
+            }
+        }
+        }
+    img{
+        width: 100%;
+    }
+
+    }
+
+    @media screen and (min-width: 756px) {
+
+    .container{
+
+         .wrapper{
+            .bloc{
+                padding-top: 1em;
+                padding-bottom: 2em;
+            }
+                .flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+
+            .text{
+                width: 130%;
+
+            h2{
+                padding-top: 2em;
+            }
+            p{
+                padding-right: 1em;
+                
+            }
+        }
+
+            .hair-view{
+                flex-direction: column;
+                align-items: center;
+            }
+            img{
+                border: 2px solid white;
+                border-radius: 15px;
+            }
+            
+        }
+
+    }
+}
+    }
