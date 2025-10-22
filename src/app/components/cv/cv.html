@@ -1,0 +1,285 @@
+<router-outlet />
+<header #header class="header">
+  <div class="flex-header">
+    <div id="title">
+      <h1>Mélanie BLONDIN</h1>
+      <h3>Développeuse Web et mobile</h3>
+      <p>melanieblondin.dev&#64;gmail.com</p>
+      <i class="fa-solid fa-bars" (click)="showMenu()"></i>
+    </div>
+  </div>
+  <nav id="menu" class="showMenu" [class.hidden]="menuHidden">
+    <ul>
+      <li><span (click)="showApropos()">A propos</span></li>
+      <li><span (click)="showParcours()">Mon parcours</span></li>
+      <li>
+        <span (click)="showRealisations()">Mes réalisations</span>
+      </li>
+      <li><span (click)="showContactButton()">Contactez-moi</span></li>
+    </ul>
+  </nav>
+</header>
+<div class="wrapper">
+  <main class="flex-main">
+    <section class="section">
+      <div class="presentation">
+        <div id="picture">
+          <img
+            src="profil-picture-melanieblondin.jpg"
+            alt="melanie-blondin-web-developpeur-fullstack"
+          />
+        </div>
+        <p id="description">
+          Je suis Développeuse Web Fullstack pour vos projets front-end et back-end. Je maîtrise le
+          framework Angular et les languages de bases de données
+        </p>
+      </div>
+      <div class="skills-flex">
+        <div class="skills">
+          <div class="front">
+            <div class="programming-language-front">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>TypeScript</p>
+              <p>Angular</p>
+            </div>
+            <div class="note-star-front">
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="back">
+            <div class="programming-language-back">
+              <p>PHP</p>
+              <p>Express</p>
+              <p>Node</p>
+            </div>
+            <div class="note-star-back">
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bdd">
+            <div class="programming-language-bdd">
+              <p>MySQL</p>
+              <p>Mongoose</p>
+              <p>SQLite</p>
+            </div>
+            <div class="note-star-bdd">
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+
+              <div class="note-star">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="addicional-skills">
+            <div class="addicional-skills-name">
+              <p>Git</p>
+              <p>Docker</p>
+            </div>
+            <div class="note-star-addicional-skills">
+              <div>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <div>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="apropos" #focusApropos [class.hidden]="aproposHidden" (click)="closeApropos()">
+        <div class="question">
+          <strong> Vous souhaitez réaliser un site internet? </strong>
+        </div>
+        <p class="reponse">
+          Je propose la création de pages web statiques ou dynamiques, sites vitrines ou
+          e-commerces, CMS type Wordpress.
+        </p>
+        <div #focusApropos class="question">
+          <strong> Une idée d'application pour faciliter votre travail au quotidien? </strong>
+        </div>
+        <p class="reponse">
+          Je mets à votre service mes compétences avec le framework Angular pour faire de vos
+          souhaits une réalité.
+        </p>
+        <div class="question">
+          <strong> Vous devez gérer, stocker sécuritairement des informations? </strong>
+        </div>
+        <p class="reponse">Je peux créer et développer votre base de données</p>
+        <div class="question">
+          <strong> Besoins en formation ou d'assistance? </strong>
+        </div>
+        <p class="reponse">
+          C'est possible. De plus, je peux vous proposer une formation sur le produit que je
+          développe, vous rendre totalement autonome, ou assurer un suivi, ou la maintenance de
+          votre application.
+        </p>
+
+        <div class="question">
+          <strong> Vous êtes intéressés mais il reste quelques points à clarifier... </strong>
+        </div>
+        <p class="reponse">
+          Contactez-moi! On parlera de votre projet, des possibilités et je répondrai à vos
+          questions.
+        </p>
+      </div>
+      <div class="spacer" [class.noShow]="aproposHidden"></div>
+
+      <div #focusParcours id="parcours" [class.hidden]="parcoursHidden" (click)="closeParcours()">
+        <div class="title">PARCOURS</div>
+        <h3>Titre professionnel Développeur Web et Web mobile</h3>
+        <p>Centre Européen de Formation à l’Informatique et à l’Internet</p>
+        <strong>Octobre 2024-Octobre 2025</strong>
+      </div>
+      <div class="spacer-parcours" [class.noShow]="parcoursHidden"></div>
+      <div #focusRealisations id="realisations" class="paragraphe-realisations">
+        <div class="title">REALISATIONS</div>
+        <div class="realisations-flex">
+          <a href="https://www.soleilbyhortensia.es/" target="_blank">
+            <div
+              class="realisation-flex"
+              (mouseover)="explanationRequest('rea1')"
+              (mouseout)="explanationRequestOver('rea1')"
+            >
+              <div class="explanation" [class.explanationShowRea1]="explanationRequestRea1">
+                <p>Site web statique d'un salon de coiffure localisé en Espagne</p>
+              </div>
+              <div>
+                <img
+                  src="realisation1-site-vitrine.png"
+                  alt="realisation1-soleilbyhortensia-site-vitrine"
+                />
+              </div>
+
+              <div class="realisation-title">
+                <strong>Site vitrine</strong>
+              </div>
+            </div>
+          </a>
+          <a routerLink="/rea2/home" target="_blank">
+            <div
+              class="realisation-flex"
+              (mouseover)="explanationRequest('rea2')"
+              (mouseout)="explanationRequestOver('rea2')"
+            >
+              <div class="explanation" [class.explanationShowRea2]="explanationRequestRea2">
+                <p>
+                  Site en version dynamique (Angular 18) avec traduction en 3 langues
+                  (transloco-service)
+                </p>
+              </div>
+
+              <div>
+                <img
+                  src="realisation1-site-vitrine.png"
+                  alt="realisation1-soleilbyhortensia-angular-application"
+                />
+              </div>
+
+              <div class="realisation-title">
+                <strong>Application Angular</strong>
+              </div>
+            </div>
+          </a>
+          <div class="realisation-flex">
+            <img src="" alt="" />
+            <div class="realisation-title">
+              <strong>Site e-commerce</strong>
+            </div>
+          </div>
+          <div class="realisation-flex">
+            <img src="" alt="" />
+            <div class="realisation-title">
+              <strong>Outil de suivi Process</strong>
+            </div>
+          </div>
+          <div class="realisation-flex">
+            <img src="" alt="" />
+            <div class="realisation-title">
+              <strong>Gestion de Base de données</strong>
+            </div>
+          </div>
+          <div class="realisation-flex">
+            <img src="" alt="" />
+            <div class="realisation-title"><strong>API</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<footer class="footer">
+  <div id="plus-container">
+    <div class="icon-container">
+      <i class="fa-solid fa-square-plus" (click)="showPlus()"></i>
+    </div>
+    <div id="plus" [class.hidden]="plusHidden">
+      <div id="languages">
+        <p>English: courant</p>
+        <p>Espagnol: courant</p>
+      </div>
+      <div id="sports">
+        <p>Sport: course à pied<br />piscine, rugby</p>
+      </div>
+      <div id="hobbies">
+        <p>Lecture, jardinage <br />navigation en voilier</p>
+      </div>
+    </div>
+  </div>
+  <div class="icon-container">
+    <i class="fa-solid fa-envelope" (click)="showContact()"></i>
+  </div>
+  <div #focusContact id="contact" [class.hidden]="contactHidden">
+    <p>melanieblondin.dev&#64;gmail.com</p>
+    <p>(+262) 06.92.93.05.72</p>
+  </div>
+  <div class="spacer"></div>
+  <div class="footer-bottom-container">
+    <p>Powered by NeoDev hosted by AMEN</p>
+    <a href="https://www.linkedin.com/in/melanie-blondin-706864348/" target="_blank"
+      ><i class="fa-brands fa-linkedin"></i
+    ></a>
+  </div>
+</footer>

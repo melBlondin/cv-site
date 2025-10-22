@@ -1,13 +1,22 @@
-
-<div class="sbh-logo"><img src="sbh-logo.jpeg" alt="logo-soleilByHortensia"></div>
+<div class="sbh-logo"><img src="sbh-logo.jpeg" alt="logo-soleilByHortensia" /></div>
 <div class="nav" *transloco="let t">
-    <div class="hidden-burger-menu" id="burger-menu" (click)="requestFromToggle()"><i class="fa-solid fa-bars"></i></div>
-    <div [class.hidden]="showMenu" id="big-menu">
+  <div class="hidden-burger-menu" id="burger-menu" (click)="requestFromToggle()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <div [class.hidden]="showMenu" id="big-menu">
     <ul class="nav-labels">
-        <li><a href="/home">{{t('home')}}</a></li>
-        <li><a href="/services">{{t('services')}}</a></li>
-        <li><a href="/tarifs">{{t('prices')}}</a></li>
-        <li><a href="/contact">{{t('contact')}}</a></li>
+      <li>
+        <a href="/rea2/home">{{ t('home') }}</a>
+      </li>
+      <li>
+        <a href="/rea2/services">{{ t('services') }}</a>
+      </li>
+      <li>
+        <a href="/rea2/tarifs">{{ t('prices') }}</a>
+      </li>
+      <li>
+        <a href="/rea2/contact">{{ t('contact') }}</a>
+      </li>
     </ul>
-    </div>
+  </div>
 </div>

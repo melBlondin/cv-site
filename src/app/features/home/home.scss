@@ -71,6 +71,8 @@ img {
   img {
     width: 30%;
     border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 1px 5px 5px rgb(110, 109, 109);
   }
 }
 
@@ -110,49 +112,6 @@ img {
       }
       .welcome-msg {
         font-size: 1.1em;
-      }
-    }
-  }
-}
-.nav {
-  font-size: 2.5em;
-
-  .nav-labels {
-    width: 80%;
-    flex-direction: row;
-    justify-content: space-around;
-    position: static;
-
-    li {
-      width: 100%;
-      text-align: center;
-      height: 2em;
-      border: none;
-    }
-  }
-}
-
-.sbh-logo {
-  height: 11em;
-  img {
-    width: 200px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    .title {
-      font-size: 5em;
-      height: 4em;
-    }
-    .nav {
-      font-size: 2em;
-      .nav-labels {
-        width: 70%;
-      }
-    }
-    .sbh-logo {
-      height: 10em;
-      img {
-        width: 200px;
       }
     }
   }
