@@ -185,7 +185,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 130px;
+  width: 150px;
   height: 250px;
   border: 1px solid rgb(223, 219, 219);
   box-shadow: 10px 5px 5px rgb(150, 148, 148);
@@ -217,6 +217,7 @@ nav ul {
 .skills-flex {
   display: flex;
   justify-content: center;
+  min-width: 320px;
 }
 
 .skills {
@@ -262,7 +263,7 @@ nav ul {
 .programming-language-front {
   display: flex;
   flex-direction: column;
-  width: 46%;
+  width: 36%;
   text-align: left;
   gap: 0.1em;
 }
@@ -382,8 +383,8 @@ nav ul {
 
 .explanation {
   height: 0;
-  width: 130px;
-  background-color: rgb(197, 194, 197);
+  width: 150px;
+  background: linear-gradient(#e99595, #a9addb);
   position: absolute;
   border-radius: 10%;
   transition: height 2s;
@@ -393,14 +394,19 @@ nav ul {
 
 .explanation p {
   padding: 0.5em;
+  padding-top: 1em;
 }
 
 .explanationShowRea1 {
-  height: 7.5em;
+  height: 6.5em;
 }
 
 .explanationShowRea2 {
-  height: 10em;
+  height: 7.8em;
+}
+
+.explanationShowRea3 {
+  height: 7.5em;
 }
 
 @media screen and (min-width: 430px) {
@@ -480,7 +486,7 @@ nav ul {
   }
 
   .presentation p {
-    font-size: 2.2em;
+    font-size: 2.3em;
   }
 
   nav {
@@ -495,6 +501,7 @@ nav ul {
   nav ul li {
     width: 25%;
     justify-content: space-around;
+    font-size: 1.3em;
   }
 
   .showMenu {
@@ -516,7 +523,7 @@ nav ul {
   }
 
   .realisations-flex {
-    column-gap: 2em;
+    column-gap: 3em;
   }
 
   .fa-bars {

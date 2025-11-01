@@ -1,57 +1,52 @@
+.title {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 6em;
+  font-weight: lighter;
+  font-size: 3em;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-style: normal;
+  color: #b8860b;
+  background-color: rgba(250, 250, 250, 1);
+  border: 3px solid #b8860b;
+  margin: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 
-
-.title{
+  .flex {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    height: 6em;
-    font-weight: lighter;
-    font-size: 3em;
-    font-family: "Qwitcher Grypen", cursive;
-    font-style: normal;
-    color: #B8860B;
-    background-color: rgba(250,250,250,1);
-    border: 3px solid #B8860B ;
-    margin: auto;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    letter-spacing: 0.1em;
+    line-height: 0.8;
+    width: 100%;
+    height: 4em;
 
-    .flex{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        letter-spacing: 0.1em;
-        line-height: 0.8;
-        width: 100%;
-        height: 4em;
-
-        h1{
-        background-color: rgba(250,250,250,0);
-        margin: 0;
-        text-align: center;
-     }
+    h1 {
+      background-color: rgba(250, 250, 250, 0);
+      margin: 0;
+      text-align: center;
     }
+  }
 }
 
 //Responsive
 @media screen and (min-width: 450px) {
-.title{
-    font-size: 3em;
+  .title {
+    font-size: 2.5em;
+  }
 }
-    }
-
 
 @media screen and (min-width: 756px) {
-.title{
-    font-size: 4em;
-    
-}
+  .title {
+    font-size: 3.5em;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-.title{
-    font-size: 5em;
+  .title {
+    font-size: 4em;
     height: 4em;
-
-}
+  }
 }

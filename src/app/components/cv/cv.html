@@ -30,8 +30,8 @@
           />
         </div>
         <p id="description">
-          Je suis Développeuse Web Fullstack pour vos projets front-end et back-end. Je maîtrise le
-          framework Angular et les languages de bases de données
+          Je suis Développeuse Web Fullstack pour vos projets front-end et back-end. <br />Je
+          maîtrise le framework Angular et les languages de bases de données
         </p>
       </div>
       <div class="skills-flex">
@@ -220,6 +220,26 @@
 
               <div class="realisation-title">
                 <strong>Application Angular</strong>
+              </div>
+            </div>
+          </a>
+          <a href="http://www.lagranderandonnee.fr/" target="_blank">
+            <div
+              class="realisation-flex"
+              (mouseover)="explanationRequest('rea3')"
+              (mouseout)="explanationRequestOver('rea3')"
+            >
+              <div class="explanation" [class.explanationShowRea3]="explanationRequestRea3">
+                <p>Site web statique d'un centre équestre situé dans le morbihan (FRANCE, 56)</p>
+              </div>
+              <div>
+                <img
+                  src="realisation3-LGR.png"
+                  alt="realisation3-la-grande-randonnee-site-vitrine"
+                />
+              </div>
+              <div class="realisation-title">
+                <strong>Site vitrine</strong>
               </div>
             </div>
           </a>
