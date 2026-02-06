@@ -16,6 +16,7 @@ export class Cv {
   explanationRequestRea1: Boolean = false;
   explanationRequestRea2: Boolean = false;
   explanationRequestRea3: Boolean = false;
+  explanationRequestRea4: Boolean = false;
 
   aproposElement = viewChild<ElementRef<HTMLElement>>('focusApropos');
   parcoursElement = viewChild<ElementRef<HTMLElement>>('focusParcours');
@@ -82,6 +83,9 @@ export class Cv {
       case 'rea3':
         this.explanationRequestRea3 = true;
         break;
+      case 'rea4':
+        this.explanationRequestRea4 = true;
+        break;
     }
   }
 
@@ -96,6 +100,9 @@ export class Cv {
         break;
       case 'rea3':
         this.explanationRequestRea3 = false;
+        break;
+      case 'rea4':
+        this.explanationRequestRea4 = false;
         break;
     }
   }
